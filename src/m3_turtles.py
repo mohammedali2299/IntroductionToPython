@@ -14,7 +14,7 @@ Authors: David Mutchler, Dave Fisher, Valerie Galluzzi, Amanda Stouder,
 """
 ########################################################################
 #
-# TODO: 1.
+# done
 #  (Yes, that means for YOU to DO things per these instructions:)
 #
 # On Line 13 above, replace  PUT_YOUR_OWN_NAME_HERE  with your OWN name.
@@ -29,7 +29,7 @@ import rosegraphics as rg
 
 ########################################################################
 #
-# TODO: 2.
+# done
 #   Allow this file to use the rosegraphics.py file by marking the src
 #   directory as a "Sources Root".  Do that by right clicking on the src folder,
 #   then selector  Mark Directory As --> Sources Root
@@ -73,11 +73,12 @@ matt.speed = 10  # Faster
 matt.backward(50)
 matt.left(90)
 matt.forward(50)
+matt.pen = rg.Pen("green",22)
 
 
 ########################################################################
 #
-# TODO: 3.
+# doneTODO: 3.
 #   Add a few more line of your own code above to make one of the
 #   existing Turtles move some more and/or have different
 #   characteristics.
