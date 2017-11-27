@@ -73,7 +73,9 @@ matt.speed = 10  # Faster
 matt.backward(50)
 matt.left(90)
 matt.forward(50)
-matt.pen = rg.Pen("green",22)
+matt.pen = rg.Pen("green", 22)
+matt.right(55)
+
 
 
 ########################################################################
@@ -90,9 +92,10 @@ matt.pen = rg.Pen("green",22)
 #
 ########################################################################
 
+
 ########################################################################
 #
-# TODO: 4.
+# done
 #   The code above  CONSTRUCTS  two SimpleTurtle objects and gives those objects NAMES:
 #       dave    matt
 #
@@ -110,7 +113,11 @@ matt.pen = rg.Pen("green",22)
 #   As always, test by running the module.
 #
 ########################################################################
-
+mo = rg.SimpleTurtle('turtle')
+mo.pen = rg.Pen('blue', 40)
+mo.speed = 20
+matt.forward(50)
+matt.right(50)
 ########################################################################
 #
 # TODO: 5.
