@@ -2,15 +2,15 @@
 Your chance to explore Loops and Turtles!
 
 Authors: David Mutchler, Dave Fisher, Valerie Galluzzi, Amanda Stouder,
-         their colleagues and PUT_YOUR_NAME_HERE.
+         their colleagues and mohammed ali.
 """
 ########################################################################
-# TODO: 1.
+# done
 # On Line 5 above, replace  PUT_YOUR_NAME_HERE  with your own name.
 ########################################################################
 
 ########################################################################
-# TODO: 2.
+# done.
 #
 #  You should have RUN the PREVIOUS module and READ its code.
 #  (Do so now if you have not already done so.)
@@ -28,3 +28,38 @@ Authors: David Mutchler, Dave Fisher, Valerie Galluzzi, Amanda Stouder,
 #
 #  Don't forget to COMMIT your work by using  VCS ~ Commit and Push.
 ########################################################################
+import rosegraphics as rg
+window = rg.TurtleWindow()
+red_turtle = rg.SimpleTurtle('turtle')
+red_turtle.pen = rg.Pen('red', 2)
+red_turtle.speed = 307
+
+blue_turtle = rg.SimpleTurtle('turtle')
+blue_turtle.pen = rg.Pen('blue', 2)
+blue_turtle.speed = 300
+size = 10
+
+red_turtle.pen_up()
+blue_turtle.pen_up()
+red_turtle.pen_down()
+blue_turtle.pen_down()
+
+for k in range(8):
+    red_turtle.draw_regular_polygon(6,size)
+
+
+    red_turtle.right(45)
+    red_turtle.forward(45)
+
+    size = size - 9
+
+    blue_turtle.draw_circle(4)
+
+
+    blue_turtle.right(45)
+    blue_turtle.forward(45)
+
+    size = size - 9
+
+
+window.close_on_mouse_click()
